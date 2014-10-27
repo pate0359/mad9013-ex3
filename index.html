@@ -18,8 +18,10 @@
       <p><strong>Task</strong>: Create a flexible grid that substitues different images at different breakpoints.</p>
       <p><strong>Requirements</strong>:</p>
       <hr>
+<!--
       <pre>
       </pre>
+-->
     </article>
   </section>
 	<div class="container">
@@ -35,7 +37,7 @@
 		$(document).ready(function() {
 		for(var i=0; i<12; i++)
 		{
-			$('.container').append('<div class="grid"><picture><source media="(max-width: 400px)" srcset="http://placehold.it/400x400"><source media="(max-width: 599px)" srcset="http://placehold.it/600x600"><source media="(max-width: 799px)" srcset="http://placehold.it/400x400"><source media="(max-width: 1023px)" srcset="http://placehold.it/512x512"><source media="(max-width: 2058px)" srcset="http://placehold.it/340x340"><img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers."></picture></div>')	
+			$('.container').append('<div class="grid"><picture><source media="(max-width: 400px)" srcset="http://placehold.it/400x400"><source media="(max-width: 599px)" srcset="http://placehold.it/600x600"><source media="(max-width: 799px)" srcset="http://placehold.it/400x400"><source media="(max-width: 1023px)" srcset="http://placehold.it/512x512"><source media="(max-width: 2058px)" srcset="http://placehold.it/340x340"><img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers."><caption>image caption text</caption></picture> </div>')	
 		}
         });
 	</script>
