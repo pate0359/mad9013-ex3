@@ -26,14 +26,24 @@ p{
   line-height: 1.75;
 }
 
-
 .wrapper{
-  max-width: 1024px;
+/*  max-width: 1024px;*/
   margin: 0 auto;
+	
 }
 
+.container
+	{
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin: 0 auto;
+	}
 
-
+picture, img
+{
+	max-width: 100%;
+}
 
 /* -- Header -- */
 
@@ -46,25 +56,49 @@ p{
   padding: 10rem 0;
 }
 
-
-
 /* ----------- Grid --------- */
 /* -------------------------- */
 .col-container{
   margin: 3rem 0;
 }
 
-
-
-
-
-
-
-
 /* -- Footer -- */
 .footer{
   background: #111;
   text-align: center;
   color: #fff;
+	float: left;
+	width: 100%;
+	clear: both;
 }
 
+/* ----------- Media Query --------- */
+/* -------------------------- */
+@media screen and (max-width: 599px) {
+.grid{ 
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	height: auto;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+.grid{
+	width: 47%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	float: left;*/
+}	
+}
+@media screen and (min-width: 1024px){
+.grid{	
+	width: 30.6%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	float: left;
+}
+.wrapper{
+	width: 1024px;
+}
+}
